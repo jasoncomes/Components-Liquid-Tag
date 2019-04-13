@@ -85,8 +85,8 @@ By adding a new tag or block to the html/components directory, the component giv
     Check out this: 
     
     <section class="experts background-green">
-    	<h1>Brian McCoy</h1>
-    	<p>Brian loves walks on the beach, puppies, and counting the stars.</p>
+      <h1>Brian McCoy</h1>
+      <p>Brian loves walks on the beach, puppies, and counting the stars.</p>
     </section>
 
 ### Tag: icon.tag
