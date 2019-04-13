@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# components / https://www.notion.so/highereducation/components-9275cc38607d43bc85128af7a5627cfa
+# components / https://github.com/jasoncomes/Components-Liquid-Tag
 # This automatically registers all tags and blocks added to the _html/components directory. If the @styleguide tag is used then it'll build out a page: https://www.bestcolleges.com/styleguide/
 
 module Jekyll
