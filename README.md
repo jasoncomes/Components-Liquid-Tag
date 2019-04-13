@@ -1,6 +1,6 @@
 # components
 
-This automatically registers all tags and blocks added to the _html/components directory. If the [styleguide](https://www.notion.so/9614bcf6-e335-4bca-a1eb-b160938ded85) tag is used then it'll build out a page: [https://www.bestcolleges.com/styleguide/](https://www.bestcolleges.com/styleguide/)
+This automatically registers all tags and blocks added to the _html/components directory.
 
 ### Requirements
 
@@ -29,32 +29,30 @@ By adding a new tag or block to the html/components directory, the component giv
 
 **Config ~ Global Defaults**
 
-    brians_magnificent_slider:
+    da_magnificent_slider:
       background: green
       title: "Get your Slide On"
 
 **Layout Frontmatter > Config**
 
     ---
-    brians_magnificent_slider:
+    da_magnificent_slider:
       title: "Get your Slide On in this Unique Layout"
     ---
 
 **Page Frontmatter > Layout Frontmatter**
 
     ---
-    brians_magnificent_slider:
+    da_magnificent_slider:
       background: red
       title: "Get your Slide On in this Unique Page"
     ---
 
 **Page Content**
 
-    {% brians_magnificent_slider title:"Check out my Slider!" other_attributes... %}
+    {% da_magnificent_slider title:"Check out my Slider!" other_attributes... %}
 
 ## Example
-
----
 
 ### Block: expert.block
 
@@ -67,10 +65,10 @@ By adding a new tag or block to the html/components directory, the component giv
     {% endcomment %}
     
     {% if content %}
-    	<section class="experts {{ class }}">
-    		{% if title %}<h1>{{ title }}</h1>{% endif %}
+      <section class="experts {{ class }}">
+        {% if title %}<h1>{{ title }}</h1>{% endif %}
         {{ content }}
-    	</section>
+      </section>
     {% endif %}
 
 ### Input
@@ -78,7 +76,7 @@ By adding a new tag or block to the html/components directory, the component giv
     Check out this: 
     
     {% expert title:"Brian McCoy" class:"background-green" }
-    	<p>Brian loves walks on the beach, puppies, and counting the stars.</p>
+      <p>Brian loves walks on the beach, puppies, and counting the stars.</p>
     {% endexpert %}
 
 ### Output
@@ -100,7 +98,7 @@ By adding a new tag or block to the html/components directory, the component giv
     {% endcomment %}
     
     {% if src %}
-    	<img src="{{ src }}" alt="{{ title }}" class="{{ class }}" />
+      <img src="{{ src }}" alt="{{ title }}" class="{{ class }}" />
     {% endif %}
 
 ### Input
