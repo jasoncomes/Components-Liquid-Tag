@@ -6,6 +6,7 @@ This automatically registers all tags and blocks added to the _html/components d
 
 Each component in the `_html/components` directory must follow suit:
 
+- The `lib` helpers must be setup on your system for your components to work correctly.
 - Must be in the `_html/components` directory.
 - Name must be suffixed with `.tag` or `.block`. Differences between block and tag are, tags don't have content region where blocks do.
 - Component must have docblock with following data:
@@ -112,3 +113,40 @@ By adding a new tag or block to the html/components directory, the component giv
     Check out this: 
     
     <img src="/assets/img/icon.png" alt="Brian McCoy" class="background-green" />
+
+
+---
+
+
+## Styleguide
+
+The `{% styleguide %}` tag is an add-on, if not used this doesn't affect the automated creation of components above. Here's how it works, add tag `{% styleguide %}` to page, this will automatically populate based on the components directory. The `Assets` files are only needed if you decide to use this tag.*Collects all properties and content from each component within `_html/components` and creates a stylized output at `/styleguide` based on each components potential properties and content, ie: `Title` `Example` `Properties` `Usage` `Instructions`*
+
+### Requirements
+
+- The `assets` files will help you setup styles and js for this page.
+
+### **Usage**
+
+    {% styleguide %}
+
+### Parameters
+
+- `none`
+
+### Return
+
+- All components
+
+### Component Requirements
+
+Each component in the `_html/components` directory must follow suit:
+
+- Must be in the `_html/components` directory.
+- Name must be suffixed with `.tag` or `.block`
+- Component must have docblock with following data:
+    - `Title`
+    - `Example` can also have alternative examples, Example_1, Example_2, ..., Example_5
+    - `Properties`
+    - `Instructions`
+    - Any additional properties you add, will be added to the styleguide.
